@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="leftnav">
+                <a class="home" href="index.html">Home</a>
+                <a class="projects" href="projects.html">Projects</a>
+                <a class="about" href="about.html">Contact</a>
+                <a href="me.html"
+                    ><img
+                        src="images/me.png"
+                        class="me"
+                        alt="picture of myself"
+                /></a>
+                <a class="Freelance" href="freelance.html">Freelance</a>
+                <a class="Arcade" href="arcade.html">Arcade</a>
+                <a class="Exploration" href="exploration.html">Exploration</a>
+            </div>
+        </div>
+        <div class="intro">
+            <div class="hire">
+                <h1>Hire a developer to help with coding needs</h1>
+                <button
+                    class="hire-button"
+                    onclick="openForm()"
+        
+                >
+                    Hire
+                </button>
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>Hire</h1>
+
+                        <label for="email"><b>Email</b></label>
+                        <input
+                            type="text"
+                            placeholder="Enter Email"
+                            name="email"
+                            required
+                        />
+
+                        <label for="desc"><b>Description</b></label>
+                        <input
+                            type="text"
+                            placeholder="Write a few sentences describing what you want done"
+                            name="desc"
+                            required
+                        />
+
+                        <button type="submit" class="btn">Submit</button>
+                        <button
+                            type="button"
+                            class="btn cancel"
+                            onclick="closeForm()"
+                        >
+                            Close
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="apply">
+                <h1>Apply for work</h1>
+                <button id="applyButton">Apply</button>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
