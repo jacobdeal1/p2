@@ -27,16 +27,10 @@
         <div class="intro">
             <div class="hire">
                 <h1>Hire a developer to help with coding needs</h1>
-                <button
-                    class="hire-button"
-                    onclick="openForm()"
-        
-                >
-                    Hire
-                </button>
+                <button class="hire-button" onclick="openForm()">Hire</button>
                 <div class="form-popup" id="myForm">
                     <form action="/action_page.php" class="form-container">
-                        <h1>Hire</h1>
+                        <h1 id="center">Hire</h1>
 
                         <label for="email"><b>Email</b></label>
                         <input
@@ -48,20 +42,22 @@
 
                         <label for="desc"><b>Description</b></label>
                         <input
+                            class="poop"
                             type="text"
                             placeholder="Write a few sentences describing what you want done"
                             name="desc"
                             required
                         />
-
-                        <button type="submit" class="btn">Submit</button>
-                        <button
-                            type="button"
-                            class="btn cancel"
-                            onclick="closeForm()"
-                        >
-                            Close
-                        </button>
+                        <div class="btns">
+                            <button type="submit" class="btn">Submit</button>
+                            <button
+                                type="button"
+                                class="btn-cancel"
+                                onclick="closeForm()"
+                            >
+                                Close
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>

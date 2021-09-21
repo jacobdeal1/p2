@@ -52,7 +52,6 @@ body {
     font-weight: 300;
     font-size: 35px;
     color: whitesmoke;
-    
 }
 
 .hire {
@@ -61,8 +60,6 @@ body {
 
 .apply {
 }
-
-
 
 .hire-button:hover {
     color: white;
@@ -84,51 +81,72 @@ body {
     margin-right: 10%;
     margin-top: 20%;
     padding: 10px 20px;
-  }
-  
+}
 
-  .form-popup {
+.form-popup {
     display: none;
-    
     right: 15px;
-    
     z-index: 9;
-  }
-  
+}
 
-  .form-container {
+.form-container {
     padding: 0 20px;
     border-radius: 20px;
     background-color: lightslategray;
-  }
-  
+}
 
-  .form-container input[type=text], .form-container input[type=password] {
-    
+.form-container input[type="text"],
+.form-container input[type="password"] {
     border: none;
     background: white;
-    
-  }
-  
+}
 
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
     background-color: whitesmoke;
     outline: none;
-  }
-  
+}
 
-  .form-container .btn {
-    background-color: #04AA6D;
+.form-container .btn {
+    background-color: #04aa6d;
     color: white;
     border: none;
     cursor: pointer;
-  }
-  
-  .form-container .cancel {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+
+.form-container .btn-cancel {
     background-color: red;
-  }
-  
- 
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+.btn:hover {
+    background-color: lightgreen;
+}
+
+.btn-cancel:hover:hover {
+    background-color: darkred;
+}
+
+.poop {
+    height: 100px;
+    width: 400px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+#center {
+    text-align: center;
+}
